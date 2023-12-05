@@ -1,19 +1,29 @@
-body {
-  background-color: #f0f0f0;
-  color: #333;
+:root {
+  --main-bg-color: #f0f0f0;
+  --secondary-bg-color: #fff;
+  --text-color: #666;
+  --accent-color: #c42b2b;
+  --secondary-color: #77552b;
+  --border-color: #9a9999;
+  --heading-color: #0a7a0f;
 }
 
-.container {
+body {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+}
+
+article {
   width: 95mm;
   position: relative;
-  border: 2px solid rgb(154, 153, 153);
+  border: 2px solid var(--border-color);
   padding: 5px 10px 70px;
 }
 header,
 .var-1,
 .var-2,
 .var-3 {
-  background-color: #fff;
+  background-color: var(--secondary-bg-color);
   margin-bottom: 4px;
   padding: 8px 12px;
 }
@@ -25,7 +35,7 @@ header {
   margin-bottom: 9px;
 }
 
-.variants {
+section {
   margin-bottom: -35px;
 }
 
@@ -47,12 +57,12 @@ header {
 h1 {
   font-size: 3em;
   margin: 0;
-  color: #0a7a0f;
+  color: var(--heading-color);
   font-weight: bold;
 }
 
 .sub-heading {
-  color: #77552b;
+  color: var(--secondary-color);
 }
 
 .card-heading {
@@ -63,12 +73,12 @@ h1 {
 
 h2 {
   font-size: 1.2em;
-  color: #77552b;
+  color: var(--secondary-color);
   margin: 8px 0;
 }
 
 .price {
-  color: #c42b2b;
+  color: var(--accent-color);
   font-size: 1.3em;
   font-weight: bold;
 }
@@ -76,7 +86,6 @@ h2 {
 .branch,
 .diameter {
   font-size: 0.9em;
-  color: #666;
 }
 
 .branch {
@@ -86,7 +95,7 @@ h2 {
 footer {
   text-align: center;
   font-size: 0.8em;
-  color: #9d9d9d;
+  color: var(--border-color);
   padding-top: 8px;
   position: absolute;
   bottom: -5px;
